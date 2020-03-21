@@ -1,0 +1,206 @@
+$col-width-xs: 8%;
+$font-size-xs: .7rem;
+
+.month-container {
+  $border-style: 1px #e0e0e0 solid;
+  padding: 24px;
+  background-color: #fff;
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  .header.row {
+    border: none;
+    padding: 4px;
+    border-bottom: 1px darkgrey solid;
+
+    .col {
+      border: none;
+    }
+
+  }
+
+
+  .btn-default img {
+    margin: 0;
+    height: 32px;
+    width: 32px;
+  }
+
+  button {
+    box-shadow: none;
+  }
+
+  .weekend {
+    background: #fafafa;
+  }
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+    border-bottom: $border-style;
+  }
+  .week.row{
+    border-right: $border-style;
+  }
+
+  .col.day {
+    padding: 2px 5px;
+    border-left: $border-style;
+  }
+
+  .col.day.splurge, .col.day-totals.splurge {
+    .spent button, .money {
+      color: #ed4a52;
+    }
+  }
+
+
+  .col.day-totals {
+    text-align: center;
+    border-bottom: none;
+    padding: 0;
+    font-size: 1rem;
+
+    .btn{
+      padding: 0;
+      margin-top: 23px;
+    }
+
+    img {
+      height: 32px;
+      width: 32px;
+    }
+
+    a {
+      padding: 24px;
+    }
+
+    span {
+      font-size: .9rem;
+    }
+
+    button {
+      border: none;
+    }
+
+    button:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .today {
+    background: #f3fdf3;
+
+    .date {
+      font-weight: bold;
+      color: #ff4c4c;
+    }
+
+    .unfocus {
+      color: #ff4c4c;
+    }
+  }
+
+  .unfocus {
+    color: darkgray;
+  }
+}
+
+.week {
+  width: 100%;
+}
+
+.day {
+  height: 96px;
+  color: #2a2a2a;
+
+  .num {
+    text-align: right;
+  }
+
+  .spent {
+    text-align: center;
+    font-size: .85rem;
+
+    button {
+      border: none;
+      color: darkgreen;
+      padding: 0;
+      background: none;
+    }
+
+    button:hover {
+      text-decoration: underline;
+    }
+  }
+
+
+}
+
+.header .col {
+  text-align: right;
+}
+
+@media (max-width: 576px) {
+  .header .col {
+    width: $col-width-xs;
+    padding: 0;
+    text-align: left;
+    font-size: .85rem;
+    margin-left: 4px;
+  }
+
+  .date {
+    padding: 2px;
+    font-size: .8rem;
+  }
+
+  .day {
+    height: 72px;
+  }
+
+  .day .spent button {
+    font-size: $font-size-xs;
+  }
+
+  .month-container {
+    .col.day, .col.day-totals {
+      width: $col-width-xs;
+      font-size: $font-size-xs;
+      .spent{
+        margin-top: 10px;
+      }
+
+      .btn{
+        padding: 0;
+      }
+
+      span {
+        font-size: .7rem;
+      }
+    }
+
+    .col.day-totals {
+      margin-top: 23px;
+    }
+  }
+
+  .day-column {
+    width: $col-width-xs;
+    padding: 4px;
+    margin: 1px;
+    height: 564px;
+  }
+  .month-container {
+    padding: 5px 0;
+  }
+}
