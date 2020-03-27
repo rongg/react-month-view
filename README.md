@@ -49,3 +49,6 @@ const myRender = (day) => {
 ## Examples
 
 Demo coming soon!
+
+## License
+The project is licensed under The MIT License. See LICENSE.md for details.
