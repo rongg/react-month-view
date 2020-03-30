@@ -1,6 +1,6 @@
 # react-month-view
 
-`react-month-view` is a minimalistic React component for displaying an array of data on a calendar month. It allows the specification of a render prop for custom day templates. 
+`react-month-view` is a minimalistic React component that takes an array of data and displays it on a calendar month, allowing the specification of a custom template for each day.
 
 ![Image of Month](month-view-example.png)
 
